@@ -1,0 +1,82 @@
+version = 1
+disable_existing_loggers = false
+
+[handlers.coreConsoleHandler]
+level="DEBUG"
+class="logging.StreamHandler"
+formatter = "coreConsoleFormatter"
+
+[handlers.coreHandler]
+level="DEBUG"
+class="logging.handlers.RotatingFileHandler"
+filename = "logs/core/core.log"
+maxBytes = 104857600
+backupCount = 5
+formatter = "coreFormatter"
+
+[handlers.databaseConsoleHandler]
+level="DEBUG"
+class="logging.StreamHandler"
+formatter = "databaseConsoleFormatter"
+
+[handlers.databaseHandler]
+level="DEBUG"
+class="logging.handlers.RotatingFileHandler"
+filename = "logs/database/database.log"
+maxBytes = 104857600
+backupCount = 5
+formatter = "databaseFormatter"
+
+[handlers.usersConsoleHandler]
+level="DEBUG"
+class="logging.StreamHandler"
+formatter = "usersConsoleFormatter"
+
+[handlers.usersHandler]
+level="DEBUG"
+class="logging.handlers.RotatingFileHandler"
+filename = "logs/users/users.log"
+maxBytes = 104857600
+backupCount = 5
+formatter = "usersFormatter"
+
+
+[formatters.coreConsoleFormatter]
+format = "%(levelname)s %(asctime)s %(module)s %(message)s"
+datefmt = "%Y-%m-%d %H-%M-%S"
+
+[formatters.coreFormatter]
+format = "%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s"
+datefmt = "%Y-%m-%d %H-%M-%S"
+
+[formatters.databaseConsoleFormatter]
+format = "%(levelname)s %(asctime)s %(module)s %(message)s"
+datefmt = "%Y-%m-%d %H-%M-%S"
+
+[formatters.databaseFormatter]
+format = "%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s"
+datefmt = "%Y-%m-%d %H-%M-%S"
+
+[formatters.usersConsoleFormatter]
+format = "%(levelname)s %(asctime)s %(module)s %(message)s"
+datefmt = "%Y-%m-%d %H-%M-%S"
+
+[formatters.usersFormatter]
+format = "%(levelname)s %(asctime)s %(module)s %(process)d %(thread)d %(message)s"
+datefmt = "%Y-%m-%d %H-%M-%S"
+
+
+[loggers.core]
+handlers = ["coreHandler", "coreConsoleHandler"]
+level = "DEBUG"
+propagate = false
+
+[loggers.database]
+handlers = ["databaseHandler", "databaseConsoleHandler"]
+level = "DEBUG"
+propagate = false
+
+[loggers.users]
+handlers = ["usersHandler", "usersConsoleHandler"]
+level = "DEBUG"
+propagate = false
