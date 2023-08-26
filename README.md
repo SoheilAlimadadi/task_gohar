@@ -4,15 +4,33 @@
 
 ## 2. add settings.toml in the root of the project, you can find the template in docs folder
 
-## 3. make sure that you have installed mongodb-community and have it running
+## 3. To install all packages with poetry that is documented in `poetry.lock` do bellow command
 
-## 4. run the application with the command below
+```bash
+poetry install
+```
+
+## 4. activate the python environment
+
+```bash
+poetry shell
+```
+
+or
+
+```bash
+source .venv/bin/activate
+```
+
+## 4. make sure that you have installed mongodb-community and have it running
+
+## 5. run the application with the command below
 
 ```bash
 python main.py
 ```
 
-## 4. open up [https://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) in the browser
+## 6. open up [https://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) in the browser
 
 ### there are 4 endpoints in the project
 
