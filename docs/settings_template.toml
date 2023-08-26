@@ -1,12 +1,12 @@
 [fastapi]
 
-HOST =
-PORT =
+HOST = "127.0.0.1"
+PORT = 8080
 
 [mongodb]
 
-HOST =
-PORT =
+HOST = "127.0.0.1"
+PORT = 27017
 
 [mongodb.databases]
 
