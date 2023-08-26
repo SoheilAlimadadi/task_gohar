@@ -4,7 +4,7 @@
 
 ## 2. make the file `settings.toml` in the root of the project, you can find the template in docs folder
 
-## 3. To install all packages with poetry that is documented in `poetry.lock` do bellow command
+## 3. To install all packages with poetry that is documented in `poetry.lock` run the command below
 
 ```bash
 poetry install
