@@ -1,0 +1,24 @@
+[fastapi]
+
+HOST =
+PORT =
+
+[mongodb]
+
+HOST =
+PORT =
+
+[mongodb.databases]
+
+# name of db = ["collection_name"]
+user_db = ["users", "teams"]
+
+
+[logging]
+
+LOG_DIRS = [
+    ['logs'],
+    ['logs', 'core'],
+    ['logs', 'database'],
+    ['logs', 'users']
+]
