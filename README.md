@@ -2,7 +2,7 @@
 
 ## 1. clone the project and cd to the project folder
 
-## 2. add settings.toml in the root of the project, you can find the template in docs folder
+## 2. make the file `settings.toml` in the root of the project, you can find the template in docs folder
 
 ## 3. To install all packages with poetry that is documented in `poetry.lock` do bellow command
 
